@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "25df53b2-1740-4984-bf25-9c45e6c18e5c",
+		"name": "server_test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"user2\",\r\n    \"password\": \"user2pass\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/register",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"user2\",\r\n    \"password\": \"user2pass\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/login",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "prescription_post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"1e2148629d15b2adb7d267afe528695299fa0e04\",\r\n    \"Patient_id\": 97934013,\r\n    \"Medicine_id\": \"1\",\r\n    \"Frequency\": 2,\r\n    \"Pharmacy_id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/prescription",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"prescription"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "prescription_get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/prescription?token=1e2148629d15b2adb7d267afe528695299fa0e04&Patient_id=97934013",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"prescription"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "1e2148629d15b2adb7d267afe528695299fa0e04"
+						},
+						{
+							"key": "Patient_id",
+							"value": "97934013"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "prescription_detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/prescription/9247264?token=1e2148629d15b2adb7d267afe528695299fa0e04&Patient_id=97934013",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"prescription",
+						"9247264"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "1e2148629d15b2adb7d267afe528695299fa0e04"
+						},
+						{
+							"key": "Patient_id",
+							"value": "97934013"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

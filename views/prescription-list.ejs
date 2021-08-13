@@ -1,0 +1,31 @@
+<h2>
+    Prescription List
+</h2>
+<table>
+    <tr>
+        <td>ID</td>
+        <td>Date</td>
+        <td>Patient_id</td>
+        <td>Medicine_id</td>
+        <td>Pharmacy_id</td>
+    </tr>
+    <% Prescription.forEach(function (value, key) {%>
+        <tr>
+            <td>
+                <%= value.Prescription_id %>
+            </td>
+            <td>
+                <%= value.Date %>
+            </td>
+            <td>
+                <%= value.Patient_id %>
+            </td>
+            <td>
+                <%= value.Medicine_id %>
+            </td>
+            <td>
+                <%= value.Pharmacy_id %>
+            </td>
+        </tr>
+        <% }); %>
+</table>

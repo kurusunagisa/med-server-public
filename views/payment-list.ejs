@@ -1,0 +1,31 @@
+<h2>
+    Payment List
+</h2>
+<table>
+    <tr>
+        <td>ID</td>
+        <td>Cost</td>
+        <td>Payment_Made</td>
+        <td>Patient_id</td>
+        <td>Merchant_payment_id</td>
+    </tr>
+    <% Payment.forEach(function (value, key) {%>
+        <tr>
+            <td>
+                <%= value.Payment_id %>
+            </td>
+            <td>
+                <%= value.Cost %>
+            </td>
+            <td>
+                <%= value.Payment_Made %>
+            </td>
+            <td>
+                <%= value.Patient_id %>
+            </td>
+            <td>
+                <%= value.Merchant_payment_id %>
+            </td>
+        </tr>
+        <% }); %>
+</table>

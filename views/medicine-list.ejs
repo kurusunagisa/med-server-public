@@ -1,0 +1,35 @@
+<h2>
+    Medicine List
+</h2>
+<table>
+    <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Shape</td>
+        <td>Cost</td>
+        <td>Typical_Ingredients_ID</td>
+        <td>Classification_id</td>
+    </tr>
+    <% Medicine.forEach(function (value, key) {%>
+        <tr>
+            <td>
+                <%= value.Medicine_id %>
+            </td>
+            <td>
+                <%= value.Medicine_Name %>
+            </td>
+            <td>
+                <%= value.Medicine_Shape %>
+            </td>
+            <td>
+                <%= value.Actual_cost %>
+            </td>
+            <td>
+                <%= value.Typical_Ingredients_ID %>
+            </td>
+            <td>
+                <%= value.Classification_id %>
+            </td>
+        </tr>
+        <% }); %>
+</table>

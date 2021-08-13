@@ -1,0 +1,46 @@
+{
+  "name": "med-server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "build": "",
+    "test": "ava"
+  },
+  "dependencies": {
+    "@paypayopa/paypayopa-sdk-node": "^1.0.0",
+    "ava": "^3.15.0",
+    "bcrypt": "5.0.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "crypto-random-string": "^2.0.0",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "1.17.1",
+    "http-errors": "~1.6.3",
+    "install": "^0.13.0",
+    "morgan": "~1.9.1",
+    "mysql": "2.18.1",
+    "mysql2": "^2.2.5",
+    "nanoid": "^3.1.20",
+    "nodemon": "^2.0.7",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "sequelize": "^6.5.0",
+    "sequelize-cli": "^6.2.0"
+  },
+  "description": "![build status](https://github.com/soft-bear/med-server/workflows/Node.js%20CI/badge.svg)",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soft-bear/med-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soft-bear/med-server/issues"
+  },
+  "homepage": "https://github.com/soft-bear/med-server#readme"
+}

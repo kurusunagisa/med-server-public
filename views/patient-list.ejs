@@ -1,0 +1,23 @@
+<h2>
+    User List
+</h2>
+<table>
+    <tr>
+        <td>ID</td>
+        <td>Username</td>
+        <td>Token</td>
+    </tr>
+    <% Patient.forEach(function (value, key) {%>
+        <tr>
+            <td>
+                <%= value.Patient_id %>
+            </td>
+            <td>
+                <%= value.User_Name %>
+            </td>
+            <td>
+                <%= value.Token %>
+            </td>
+        </tr>
+        <% }); %>
+</table>
